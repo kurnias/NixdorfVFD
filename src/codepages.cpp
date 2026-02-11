@@ -30,6 +30,6 @@ uint8_t NixdorfVFD::to_cp866(uint8_t c){
             else if(c == 0x91)
                 return 0xf1;
         }
-        else return c;
+        return c;
     }
 }
