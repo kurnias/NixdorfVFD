@@ -41,7 +41,7 @@ The ROM chip is M27C256B UV erasable EPROM + OTP ROM chip or similar. Testing sh
 #include <SoftwareSerial.h>
 
 NixdorfVFD VFD;
-SoftwareSerial vfd(2, 3, false); // SoftwareSerial port on pins #2 and #3, inverted logic
+SoftwareSerial vfd(2, 3, true); // SoftwareSerial port on pins #2 and #3, inverted logic
 
 void setup() {
   vfd.begin(9600);              // Starting serial communication at 9600bod
